@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>EcoSpill™</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="styles.css">
+  
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/x-icon" href="../logo.ico">
+</head>
+<body>
+<div>
+
+<span id="logo" onclick="transitionToPage('../index.html')">
+    <img src="Assets/Photos/logo.png" alt="" id="logoimg"/>
+</span>
+
+<p id="ver">HTML CSS HTM AVif Ico PNG JS CSS JPG Tankesvm Affiliated Open Beta v28.1.1.10.02.3 d2025.25.04 Bugfix 32 Limited Edition Lite Eco Education Edition iPhoney Passion Max Pro e16 S C 5G iPhone 3G Touchscreen Motorola 21 Editor Edition Version Pro Debug Mode Max 20 Fruit Merge LiverReal Sponsored JavaScript EcoSpill™</p>
+<div id="gradient"></div>
+<img id="earth" src="Assets\Photos\world-globe-earth-map-png.webp" alt="" oncontextmenu="disableRightClick(event)" ondragstart="disableImageDrag(event)">
+
+<div id="startmenu">
+
+<h1>Hvordan mater vi verden?</h1>
+<div class="box">
+    <p>En bærekraftig utvikling vil si en utvikling som fyller behovene til menneskene som lever nå, uten å ødelegge fremtidige generasjoners muligheter til å fylle sine behov.</p>
+    <p class="citation"> - <a href="https://snl.no/b%C3%A6rekraft" target="_blank">https://snl.no/bærekraft</a> (10.06.2024)</p>
+    <button type="button" class="start" onclick="startGame()">Start spill</button>
+</div>
+</div>
+
+
+<div id="tutorial">
+<h2>Dette handler om mat folkens.<br>Lykke til!</h2>
+<button type="button center" onclick="tutorialDone()">Jeg er klar</button>
+</div>
+
+
+<div id="spill">
+    
+<div id="slide1">
+<h2>1. Hvilket begrep handler om hvor mye CO2 som blir sluppet ut i atmosfæren?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Drivhuseffekten</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Mat</button>
+<button class="griditems slot3" onclick="chooseSlot3()">Karbonutrykk</button>
+</div>
+</div>
+
+<div id="slide2">
+<h2>2. Hvor mye mat kastes hvert år?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Likt som 42 gigaton</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Likt som 10,000,000,000 kr</button>
+<button class="griditems slot3" onclick="chooseSlot3()">Ganske mye</button>
+</div>
+</div>
+
+<div id="slide3">
+<h2>3. Hvor mye har en "nødhjelpspose med basisvarer" steget fra 2022?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Den har steget ca 60% ca</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Liksom 200kr ca</button>
+<button class="griditems slot3" onclick="chooseSlot3()">Air conditioner</button>
+</div>
+</div>
+
+<div id="slide4">
+<h2>4. Hvor mye CO2 skaper mat i verden?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">30%</button>
+<button class="griditems slot2" onclick="chooseSlot2()">19%</button>
+<button class="griditems slot3" onclick="chooseSlot3()">31%</button>
+</div>
+</div>
+
+<div id="slide5">
+<h2>5. Hvor mye mer koster det for egg om du skal få hønsa ut av fengsel?</h2>
+<img class="bg" src="../ad.png" alt="">
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">50%</button>
+<button class="griditems slot2 smalltext" onclick="chooseSlot2()">60% vettu</button>
+<button class="griditems slot3" onclick="chooseSlot3()">52%</button>
+</div>
+</div>
+
+<div id="slide6">
+<h2>6. Hva er konsekvensetikk?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Å gjøre det valget som gir beste resultater</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Å ta vare på neste generasjon etter deg</button>
+<button class="griditems slot3" onclick="chooseSlot3()">Å gjøre det som er forventet av deg i samfunnet</button>
+</div>
+</div>
+
+<div id="slide7">
+<h2>7. Hvor mye CO2 produserer kjøtt?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">60 kilogram karbondioksid per 1 kilogram kjøtt produsert</button>
+<button class="griditems slot2" onclick="chooseSlot2()">30 kilogram karbondioksid per 1 kubikkdesimeter kjøtt produsert</button>
+<button class="griditems slot3" onclick="chooseSlot3()">30 kilogram karbondioksid per 1 kilogram kjøtt produsert</button>
+</div>
+</div>
+
+<div id="slide8">
+<h2>8. Hvor mye Extra™ for kjøtt for å befri kuer?
+</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">100%</button>
+<button class="griditems slot2" onclick="chooseSlot2()">15%</button>
+<button class="griditems slot3" onclick="chooseSlot3()">Eleven</button>
+</div>
+</div>
+
+<div id="slide9">
+<h2>9. Hvilket land har mest ødeleggelse fra matproduksjon?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Taiwan</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Kina</button>
+<button class="griditems slot3" onclick="chooseSlot3()">India</button>
+</div>
+</div>
+
+<div id="slide10">
+<h2>10. Hva kan du gjøre for å spise mer bærekraftig?</h2>
+
+<div class="grid">
+<button class="griditems slot1" onclick="chooseSlot1()">Lage mat fra toppen av altså kjøpe det ferdig</button>
+<button class="griditems slot2" onclick="chooseSlot2()">Ikke spise klimavennlig</button>
+<button class="griditems slot3 smalltext" onclick="chooseSlot3()">Redusere matsvinn, lage mat fra bunnen av, og spise bærekraftig folkens jaa folkens yes :)</button>
+</div>
+</div>
+
+
+
+</div>
+
+<div id="barer">
+<div id="luksusbar"></div>
+<div id="luksusbarfill"></div>
+<div id="luksustext"></div>
+</div>
+
+
+<div id="end">
+<h1>Gratulerer du er super kul!</h1>
+<p class="center" id="luksuscount">0</p>
+<p id="info"> <- dette er tilbakeknappen</p>
+
+</div>
+
+
+</div>
+<script>
+const earth = document.getElementById("earth")
+const barer = document.getElementById("barer")
+const startmenu = document.getElementById("startmenu")
+const tutorial = document.getElementById("tutorial")
+const spill = document.getElementById("spill")
+const slide1 = document.getElementById("slide1")
+const slide2 = document.getElementById("slide2")
+const slide3 = document.getElementById("slide3")
+const slide4 = document.getElementById("slide4")
+const slide5 = document.getElementById("slide5")
+const slide6 = document.getElementById("slide6")
+const slide7 = document.getElementById("slide7")
+const slide8 = document.getElementById("slide8")
+const slide9 = document.getElementById("slide9")
+const slide10 = document.getElementById("slide10")
+const luksusbarfill = document.getElementById("luksusbarfill")
+const luksustext = document.getElementById("luksustext")
+const luksuscount = document.getElementById("luksuscount")
+const end = document.getElementById("end")
+
+let slide = 1;
+let luksus = 0;
+
+updateFill();
+
+spill.style.display = "none";
+tutorial.style.display = "none";
+slide1.style.display = "none";
+slide2.style.display = "none";
+slide3.style.display = "none";
+slide4.style.display = "none";
+slide5.style.display = "none";
+slide6.style.display = "none";
+slide7.style.display = "none";
+slide8.style.display = "none";
+slide9.style.display = "none";
+slide10.style.display = "none";
+end.style.display = "none";
+barer.style.display = "none";
+
+const snd = new Audio('../grattis.mp3');
+const fengsle = new Audio('../fengsle.mp3');
+
+snd.volume = 1;
+fengsle.volume = 0.5;
+
+function correct() {
+    earth.style.filter = "hue-rotate(40deg)";
+    luksusbarfill.style.filter = "hue-rotate(40deg)";
+    setTimeout(function(){
+    earth.style.filter = "hue-rotate(0deg)";
+    luksusbarfill.style.filter = "hue-rotate(0deg)";
+}, 1000);
+}
+
+function error() {
+    earth.style.filter = "hue-rotate(180deg)";
+    luksusbarfill.style.filter = "hue-rotate(-60deg)";
+        setTimeout(function(){
+    earth.style.filter = "hue-rotate(0deg)";
+    luksusbarfill.style.filter = "hue-rotate(0deg)";
+}, 1000);
+}
+
+function startGame() {
+    earth.style.top = "60vh";
+    startmenu.style.display = "none";
+    tutorial.style.display = "block";    
+}
+
+function tutorialDone() {
+    spill.style.display = "block";
+    slide1.style.display = "block";
+    tutorial.style.display = "none";
+    barer.style.display = "block";
+}
+
+function nextSlide() {
+    slide += 1;
+    if (slide == 2) {
+    slide1.style.display = "none";
+    slide2.style.display = "block";
+    }
+
+    if (slide == 3) {
+    slide2.style.display = "none";
+    slide3.style.display = "block";
+    }
+
+    if (slide == 4) {
+    slide3.style.display = "none";
+    slide4.style.display = "block";
+    }
+
+    if (slide == 5) {
+    slide4.style.display = "none";
+    slide5.style.display = "block";
+    fengsle.play();
+    }
+
+    if (slide == 6) {
+    slide5.style.display = "none";
+    slide6.style.display = "block";
+    }
+
+    if (slide == 7) {
+    slide6.style.display = "none";
+    slide7.style.display = "block";
+    }
+
+    if (slide == 8) {
+    slide7.style.display = "none";
+    slide8.style.display = "block";
+    }
+
+    if (slide == 9) {
+    slide8.style.display = "none";
+    slide9.style.display = "block";
+    }
+
+    if (slide == 10) {
+    slide9.style.display = "none";
+    slide10.style.display = "block";
+    }
+
+    if (slide == 11) {
+    slide10.style.display = "none";
+    spill.style.display = "none";
+    end.style.display = "block";
+    snd.play();
+    }
+}
+
+function chooseSlot1() {
+    if (slide == 1) {
+        luksus += 1;
+        error();
+    }
+    if (slide == 2) {
+        luksus += 2;
+        error();
+    }
+    if (slide == 3) {
+        luksus += 10;
+        correct();
+    }
+    if (slide == 4) {
+        luksus += 9;
+        correct();
+    }
+    if (slide == 5) {
+        luksus += 8;
+        correct();
+    }
+    if (slide == 6) {
+        luksus += 13;
+        correct();
+    }
+    if (slide == 7) {
+        luksus += 9;
+        correct();
+    }
+    if (slide == 8) {
+        luksus += 2;
+        error();
+    }
+    if (slide == 9) {
+        luksus += 4;
+        error();
+    }
+    if (slide == 10) {
+        luksus += 3;
+        error();
+    }
+
+    nextSlide();
+    updateFill();
+}
+
+function chooseSlot2() {
+    if (slide == 1) {
+        luksus += 2;
+        error();
+    }
+    if (slide == 2) {
+        luksus += 7;
+        correct();
+    }
+    if (slide == 3) {
+        luksus += 10;
+        correct();
+    }
+    if (slide == 4) {
+        luksus += 0;
+        error();
+    }
+    if (slide == 5) {
+        luksus += 3;
+        error();
+    }
+    if (slide == 6) {
+        luksus += 0;
+        error();
+    }
+    if (slide == 7) {
+        luksus += 2;
+        error();
+    }
+    if (slide == 8) {
+        luksus += 11;
+        correct();
+    }
+    if (slide == 9) {
+        luksus += 5;
+        error();
+    }
+    if (slide == 10) {
+        luksus += 7;
+        error();
+    }
+
+    nextSlide();
+    updateFill();
+}
+
+function chooseSlot3() {
+    if (slide == 1) {
+        luksus += 8;
+        correct();
+    }
+    if (slide == 2) {
+        luksus += 6;
+        error();
+    }
+    if (slide == 3) {
+        luksus += 4;
+        error();
+    }
+    if (slide == 4) {
+        luksus += 0;
+        error();
+    }
+    if (slide == 5) {
+        luksus += 5;
+        error();
+    }
+    if (slide == 6) {
+        luksus += 4;
+        error();
+    }
+    if (slide == 7) {
+        luksus += 0;
+        error();
+    }
+    if (slide == 8) {
+        luksus += 5;
+        error();
+    }
+    if (slide == 9) {
+        luksus += 9;
+        correct();
+    }
+    if (slide == 10) {
+        luksus += 16;
+        correct();
+    }
+
+    nextSlide();
+    updateFill();
+}
+
+function updateFill() {
+    luksusbarfill.style.width = Math.abs(luksus) * 0.8 + "vw";
+    luksustext.innerHTML = "Poeng: " + luksus;
+    luksuscount.innerHTML = "Du fikk " + luksus + "/100 poeng";
+}
+
+
+  // Function to disable right-click menu
+  function disableRightClick(event) {
+      event.preventDefault(); // Prevent default right-click menu
+  }
+
+  // Function to disable image dragging
+  function disableImageDrag(event) {
+      event.preventDefault(); // Prevent default image drag behavior
+  }
+
+</script>
+
+<script src="../index.js"></script>
+
+</body>
+
+</html>
